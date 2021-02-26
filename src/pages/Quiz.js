@@ -107,7 +107,7 @@ class QuizPage extends React.Component {
 
         const questionNumber = ('00' + this.props.q).slice(-3);
 
-        fetch(`http://quiz-justinas.beinorius.lt/questions/${questionNumber}.question`)
+        fetch(`/questions/${questionNumber}.question`)
             .then(response => response.text())
             .then(parseQuestion)
             .then(question => {

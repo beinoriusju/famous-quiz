@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "mkdir -p dist/ && cp -R ./questions ./dist/ && parcel index.html",
+    "build": "mkdir -p dist/ && cp -R ./questions ./dist/ && parcel build index.html",
     "deploy": "sh deploy.sh"
   },
   "author": "",
