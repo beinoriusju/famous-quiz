@@ -1,0 +1,62 @@
+@import "./font";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: black;
+}
+
+#second-part {
+    background: #e2e2e2;
+}
+
+#banner {
+    min-width: 160px !important;
+}
+
+a {
+    text-decoration: underline;
+}
+
+#upsell {
+    background-image:url(../images/images.png);
+    background-size: 300px;
+}
+
+#upsell {
+    background-size: calc(50 * 100vw / 340);
+}
+
+h1 {
+    right: calc(10 * 100vw / 340);
+}
+
+@media (max-width: 768px) {
+    #upsell {
+        background-size: calc(100 * 100vw / 340);
+    }
+
+    h1 {
+        margin-right: calc(15 * 100vw / 340);
+        margin-left: calc(100 * 100vw / 340);
+    }
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a:hover {
+    color: #0064d1;
+}
